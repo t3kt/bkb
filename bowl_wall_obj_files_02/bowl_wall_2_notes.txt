@@ -1,0 +1,10 @@
+Note:
+
+combined: is a 3D model of 3 merged parts that create a single UV texture
+
+This works well for seemless video moving across each wall, including the middle sections which is painted red in event space.
+
+
+nonCombined: is three seperate parts, each having their own UV texture (I left out the middle since it's red and won't take video well).
+
+Either method will work.  The UV maps (png for overlaying in video editing software, jpg for reference) are areas that will be on the walls.  No further mapping is needed.  Any overlapping areas in the combined UV can be ignored (it's parts behind parts).
