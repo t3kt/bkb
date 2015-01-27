@@ -27,7 +27,7 @@ static void generateImage(const ofxOBJFace& face, int i) {
   image.allocate(1024, 1024, OF_IMAGE_COLOR_ALPHA);
   fbo.readToPixels(image.getPixelsRef());
   std::ostringstream name;
-  name << "segment_";
+  name << "segment-";
   name << std::setw(3) << std::setfill('0') << std::right << i;
   name << ".tif";
   ofFile file(name.str(), ofFile::WriteOnly, true);
