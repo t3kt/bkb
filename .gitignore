@@ -1,2 +1,11 @@
 bkb-output-*.*
 video/*
+bkbTextureTool/bin/*.app
+bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcuserdata/*
+bkbTextureTool/bkbTextureTool.xcodeproj/xcuserdata/*
+
+bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcshareddata/*.xccheckout
+
+CrashAutoSave.toe
+
+*.dmp
