@@ -1,8 +1,11 @@
 bkb-output-*.*
 video/*
 bkbTextureTool/bin/*.app
-bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcuserdata/tekt.xcuserdatad/UserInterfaceState.xcuserstate
+bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcuserdata/*
+bkbTextureTool/bkbTextureTool.xcodeproj/xcuserdata/*
 
-bkbTextureTool/bkbTextureTool.xcodeproj/xcuserdata/tekt.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcshareddata/*.xccheckout
 
-bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcshareddata/bkbTextureTool.xccheckout
+CrashAutoSave.toe
+
+*.dmp
