@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BF485E19A3669E59B203448 /* glm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C616F7209EE68924FCC361D /* glm.c */; };
-		32E12F3A1A7755DA000A823E /* TextureToolApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32E12F381A7755DA000A823E /* TextureToolApp.cpp */; };
 		32E12F431A775D0F000A823E /* ofxOBJFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32E12F3D1A775D0F000A823E /* ofxOBJFace.cpp */; };
 		32E12F441A775D0F000A823E /* ofxOBJGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32E12F3F1A775D0F000A823E /* ofxOBJGroup.cpp */; };
 		32E12F451A775D0F000A823E /* ofxOBJModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32E12F411A775D0F000A823E /* ofxOBJModel.cpp */; };
@@ -64,8 +63,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		32E12F381A7755DA000A823E /* TextureToolApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureToolApp.cpp; sourceTree = "<group>"; };
-		32E12F391A7755DA000A823E /* TextureToolApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureToolApp.h; sourceTree = "<group>"; };
 		32E12F3D1A775D0F000A823E /* ofxOBJFace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOBJFace.cpp; sourceTree = "<group>"; };
 		32E12F3E1A775D0F000A823E /* ofxOBJFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxOBJFace.h; sourceTree = "<group>"; };
 		32E12F3F1A775D0F000A823E /* ofxOBJGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOBJGroup.cpp; sourceTree = "<group>"; };
@@ -238,8 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				32E12F381A7755DA000A823E /* TextureToolApp.cpp */,
-				32E12F391A7755DA000A823E /* TextureToolApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -351,7 +346,6 @@
 			files = (
 				32E12F431A775D0F000A823E /* ofxOBJFace.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				32E12F3A1A7755DA000A823E /* TextureToolApp.cpp in Sources */,
 				32E12F451A775D0F000A823E /* ofxOBJModel.cpp in Sources */,
 				32E12F441A775D0F000A823E /* ofxOBJGroup.cpp in Sources */,
 				A5E0B6833181AFED8F0D51E1 /* ofxObjLoader.cpp in Sources */,
