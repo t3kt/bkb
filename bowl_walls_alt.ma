@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
 //Name: bowl_walls_alt.ma
-//Last modified: Mon, Feb 02, 2015 11:30:16 PM
+//Last modified: Mon, Feb 02, 2015 11:34:01 PM
 //Codeset: 1252
 requires maya "2014";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOutputPass" -nodeType "mentalrayRenderPass"
@@ -89,12 +89,12 @@ fileInfo "cutIdentifier" "201307170459-880822";
 fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -20.023519245728306 -7.0814227738774616 22.912951445352345 ;
-	setAttr ".r" -type "double3" 29.678153372552259 -1100.1999999992638 8.4725048676876038e-016 ;
+	setAttr ".t" -type "double3" -64.778178826199294 15.154371940446477 24.270308676133553 ;
+	setAttr ".r" -type "double3" -6.9218466274579811 -1144.1999999992333 1.8269344067797151e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 30.249473005395441;
+	setAttr ".coi" 60.228428387721692;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -6302,7 +6302,6 @@ createNode groupId -n "groupId11";
 createNode groupId -n "groupId16";
 	setAttr ".ihi" 0;
 createNode displayLayer -n "layer2";
-	setAttr ".dt" 2;
 	setAttr ".do" 2;
 createNode polyExtrudeFace -n "polyExtrudeFace2";
 	setAttr ".ics" -type "componentList" 1 "f[0:3]";
@@ -6529,39 +6528,41 @@ createNode groupParts -n "groupParts18";
 createNode animCurveTL -n "polySurface11_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 20 1.3541074059778166;
+	setAttr -s 4 ".ktv[0:3]"  1 0 75 1.3541074059778166 119 1.3541074059778166
+		 157 0;
 createNode animCurveTL -n "polySurface11_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 157 0;
 createNode animCurveTL -n "polySurface11_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 20 -4.8635418670119765;
+	setAttr -s 4 ".ktv[0:3]"  1 0 75 -4.8635418670119765 119 -4.8635418670119765
+		 157 0;
 createNode animCurveTA -n "polySurface11_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 119 0;
 createNode animCurveTA -n "polySurface11_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 119 0;
 createNode animCurveTA -n "polySurface11_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 119 0;
 createNode animCurveTU -n "polySurface11_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 119 1;
 createNode animCurveTU -n "polySurface11_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 119 1;
 createNode animCurveTU -n "polySurface11_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 119 1;
 createNode groupParts -n "groupParts2";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 3 "f[0]" "f[1]" "f[2]";
@@ -6641,8 +6642,8 @@ createNode animCurveTL -n "group3_translateZ";
 createNode animCurveTA -n "group3_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 19 -2.0075151040062593 36 -23.633872187339289
-		 50 9.2000702226457971;
+	setAttr -s 5 ".ktv[0:4]"  1 0 19 -2.0075151040062593 36 -23.633872187339289
+		 50 9.2000702226457971 157 0;
 createNode animCurveTA -n "group3_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
@@ -6705,8 +6706,8 @@ createNode animCurveTU -n "group4_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 1 58 1;
 select -ne :time1;
-	setAttr ".o" 151;
-	setAttr ".unw" 151;
+	setAttr ".o" 11;
+	setAttr ".unw" 11;
 select -ne :renderPartition;
 	setAttr -s 2 ".st";
 select -ne :initialShadingGroup;
