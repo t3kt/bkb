@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
 //Name: bowl_walls_alt.ma
-//Last modified: Mon, Feb 02, 2015 08:17:59 PM
+//Last modified: Mon, Feb 02, 2015 08:26:05 PM
 //Codeset: 1252
 requires maya "2014";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOutputPass" -nodeType "mentalrayRenderPass"
@@ -89,12 +89,12 @@ fileInfo "cutIdentifier" "201307170459-880822";
 fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -19.991688582529918 37.166990087934259 38.883830896106289 ;
-	setAttr ".r" -type "double3" -32.721846624231596 -1470.9999999998147 0 ;
+	setAttr ".t" -type "double3" -51.697103898706786 7.4575463272764466 44.894011887884751 ;
+	setAttr ".r" -type "double3" 0.87815337577312136 -1494.5999999997991 -8.5789370119945968e-017 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 52.225399427815304;
+	setAttr ".coi" 73.692557525003139;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3268,125 +3268,121 @@ createNode polyExtrudeFace -n "polyExtrudeFace1";
 	setAttr ".cbx" -type "double3" 13.951600074768066 16.061988830566406 14.242855072021484 ;
 createNode groupId -n "groupId10";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId11";
-	setAttr ".ihi" 0;
 createNode animCurveTA -n "polySurface6_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  1 0 32 37.703434553503719 49 89.582216514961914
+	setAttr -s 7 ".ktv[0:6]"  1 0 11 0 32 37.703434553503719 49 89.582216514961914
 		 71 182.10220946841827 93 284.29278884213312 119 360;
 createNode animCurveTL -n "polySurface6_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 32 1.6474830311459918 49 2.8373078313790394
+	setAttr -s 6 ".ktv[0:5]"  1 0 11 0 32 1.6474830311459918 49 2.8373078313790394
 		 93 2.5196961969487681 119 0;
 createNode animCurveTL -n "polySurface6_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTL -n "polySurface6_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 32 -1.8350408247897392 49 -3.651943228728912
+	setAttr -s 6 ".ktv[0:5]"  1 0 11 0 32 -1.8350408247897392 49 -3.651943228728912
 		 93 -3.3936642601386136 119 0;
 createNode animCurveTA -n "polySurface6_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTA -n "polySurface6_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTU -n "polySurface6_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface6_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface6_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTL -n "polySurface2_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 29 2.1266988094079355 99 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 11 0 29 2.1266988094079355 99 0;
 createNode animCurveTL -n "polySurface2_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 99 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 11 0 99 0;
 createNode animCurveTL -n "polySurface2_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTA -n "polySurface2_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 29 10.310441879305991 53 12.72080797077898
+	setAttr -s 6 ".ktv[0:5]"  1 0 11 0 29 10.310441879305991 53 12.72080797077898
 		 74 17.304006275608931 99 0;
 createNode animCurveTA -n "polySurface2_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 53 2.1384388881138832 74 9.1527286282232296
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 53 2.1384388881138832 74 9.1527286282232296
 		 99 0;
 createNode animCurveTA -n "polySurface2_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 29 17.039637667825364 53 12.03151348805117
+	setAttr -s 6 ".ktv[0:5]"  1 0 11 0 29 17.039637667825364 53 12.03151348805117
 		 74 6.5259722933905904 99 0;
 createNode animCurveTU -n "polySurface2_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface2_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface2_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
-createNode groupId -n "groupId16";
-	setAttr ".ihi" 0;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTL -n "polySurface8_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 26 1.2988504835332357 51 2.9785527129994485
+	setAttr -s 6 ".ktv[0:5]"  1 0 11 0 26 1.2988504835332357 51 2.9785527129994485
 		 76 2.1151569352926494 110 0;
 createNode animCurveTL -n "polySurface8_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 26 -0.73879304102165833 110 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 11 0 26 -0.73879304102165833 110 0;
 createNode animCurveTL -n "polySurface8_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTA -n "polySurface8_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 76 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 11 0 76 0;
 createNode animCurveTA -n "polySurface8_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 51 14.813666101413785 76 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 11 0 51 14.813666101413785 76 0;
 createNode animCurveTA -n "polySurface8_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 26 -11.388663788166436 76 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 11 0 26 -11.388663788166436 76 0;
 createNode animCurveTU -n "polySurface8_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface8_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface8_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode groupId -n "groupId20";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId21";
@@ -3394,86 +3390,90 @@ createNode groupId -n "groupId21";
 createNode animCurveTL -n "polySurface9_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTL -n "polySurface9_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 0;
 createNode animCurveTL -n "polySurface9_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 30 -1.2287106869211804 60 -2.7111113337880433
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 30 -1.2287106869211804 60 -2.7111113337880433
 		 111 0;
 createNode animCurveTA -n "polySurface9_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 60 2.6180794434753469 86 3.847871822975466
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 60 2.6180794434753469 86 3.847871822975466
 		 111 0;
 createNode animCurveTA -n "polySurface9_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 60 -0.20306960106407912 86 18.742964686177221
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 60 -0.20306960106407912 86 18.742964686177221
 		 111 0;
 createNode animCurveTA -n "polySurface9_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 60 -2.9681538625449417 86 1.2842044893169409
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 60 -2.9681538625449417 86 1.2842044893169409
 		 111 0;
 createNode animCurveTU -n "polySurface9_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface9_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface9_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTL -n "polySurface10_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 57 0.86744996676817809 82 1.5501004069430007
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 57 0.86744996676817809 82 1.5501004069430007
 		 110 0;
 createNode animCurveTL -n "polySurface10_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 31 0.51268853955317262 110 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 11 0 31 0.51268853955317262 110 0;
 createNode animCurveTL -n "polySurface10_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 31 -0.66226663424928622 57 -1.1575087936207331
+	setAttr -s 6 ".ktv[0:5]"  1 0 11 0 31 -0.66226663424928622 57 -1.1575087936207331
 		 82 -1.7062938055404957 110 0;
 createNode animCurveTA -n "polySurface10_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 57 -3.5774454804529325 82 3.107310508788439
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 57 -3.5774454804529325 82 3.107310508788439
 		 110 0;
 createNode animCurveTA -n "polySurface10_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 31 7.3362674812272539 57 12.764129991100825
+	setAttr -s 5 ".ktv[0:4]"  1 0 11 0 31 7.3362674812272539 57 12.764129991100825
 		 110 0;
 createNode animCurveTA -n "polySurface10_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 57 -10.765784645013936 110 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 11 0 57 -10.765784645013936 110 0;
 createNode animCurveTU -n "polySurface10_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface10_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
 createNode animCurveTU -n "polySurface10_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 2 ".ktv[0:1]"  1 1 11 1;
+createNode groupId -n "groupId11";
+	setAttr ".ihi" 0;
+createNode groupId -n "groupId16";
+	setAttr ".ihi" 0;
 select -ne :time1;
-	setAttr ".o" 34;
-	setAttr ".unw" 34;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :renderPartition;
 	setAttr -s 2 ".st";
 select -ne :initialShadingGroup;
