@@ -1,0 +1,14 @@
+C4D and Maya users___________
+
+FBX scene file that should load the model and cameras, if not it should at least have the positions.  Use camera jpg images to reference your shots to match other creators, this is important.
+
+Camera settings from Houdini:
+Resolution: 1280x720
+Focal Length: 50
+Aperature: 100
+
+Also included is the obj model of the walls.  UV texture coordinates should be baked into the object so let me know if you have issues.
+
+
+For Touch Designer users_________
+I included .tox scene file with boudlerWall object and cameras in place.  I've tested this for object errors and verified renders match Houdini camera renders.
