@@ -1,4 +1,5 @@
 bkb-output-*.*
+bkb-renderer-output-*.*
 video/*
 bkbTextureTool/bin/*.app
 bkbTextureTool/bkbTextureTool.xcodeproj/project.xcworkspace/xcuserdata/*
